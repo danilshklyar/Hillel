@@ -2,10 +2,10 @@
 # Распечатать те значения, которые больше 100.
 # Задание выполнить с помощью цикла for.
 
-my_list = [100, 50, 200, 300, 20]
-for number in my_list:
-    if number > 100:
-        print(number)
+# my_list = [100, 50, 200, 300, 20]
+# for number in my_list:
+#     if number > 100:
+#         print(number)
 
 
 ######################################################################################
@@ -14,12 +14,12 @@ for number in my_list:
 # Распечатать список my_results.
 # Задание выполнить с помощью цикла for.
 
-my_list = [100, 50, 200, 300, 20]
-my_result =[]
-for number in my_list:
-     if number > 100:
-         my_result.append(number)
-print(my_result)
+# my_list = [100, 50, 200, 300, 20]
+# my_result =[]
+# for number in my_list:
+#      if number > 100:
+#          my_result.append(number)
+# print(my_result)
 
 
 ################################################################################
@@ -30,14 +30,14 @@ print(my_result)
 # Количество элементов в списке можно получить с помощью функции len(my_list)
 
 
-my_list = [100, 50, 200, 300, 20]
-symbol = len(my_list)
-if symbol < 2:
-    my_list.append(0)
-    print(my_list)
-else:
-    my_list.append(my_list[-2] + my_list[-1])
-    print(my_list)
+# my_list = [100, 50, 200, 300, 20]
+# symbol = len(my_list)
+# if symbol < 2:
+#     my_list.append(0)
+#     print(my_list)
+# else:
+#     my_list.append(my_list[-2] + my_list[-1])
+#     print(my_list)
 
 ##################################################################
 
@@ -46,13 +46,13 @@ else:
 # Написать программу, которая вычисляет данное выражение и
 # корректно обрабатывает возможные исключения.
 
-value = input("Введи число: ")
-try:
-    value = float(value)
-    values = value ** -1
-    print(values)
-except (ValueError, TypeError, ZeroDivisionError):
-    print("Не верный ввод")
+# value = input("Введи число: ")
+# try:
+#     value = float(value)
+#     values = value ** -1
+#     print(values)
+# except (ValueError, TypeError, ZeroDivisionError):
+#     print("Не верный ввод")
 
 ########################################################################
 
@@ -61,12 +61,12 @@ except (ValueError, TypeError, ZeroDivisionError):
 # Пример. [1,11,20,100]
 # Ответ [11, 20], потому что индекс 1 + значение 11 это 12 - четное, индекс 2 + значение 20 это 22 - четное
 
-my_list = [1,11,20,100]
-my_results = []
-for symbol in range(len(my_list)):
-    if (symbol + my_list[symbol]) % 2 == 0:
-        my_results.append(my_list[symbol])
-print(my_results)
+# my_list = [1,11,20,100]
+# my_results = []
+# for symbol in range(len(my_list)):
+#     if (symbol + my_list[symbol]) % 2 == 0:
+#         my_results.append(my_list[symbol])
+# print(my_results)
 
 ##############################################################################
 
@@ -76,15 +76,25 @@ print(my_results)
 # (1, 2)
 # (3, 4)
 
-my_list_1 = [1, 3]
-my_list_2 = [2, 4]
-my_tuple = []
-for symbol in range(len(my_list_1)):
-    print(my_list_1[symbol], my_list_2[symbol])
+# my_list_1 = [1, 3]
+# my_list_2 = [2, 4]
+# my_tuple = []
+# for symbol in range(len(my_list_1)):
+#     print(my_list_1[symbol], my_list_2[symbol])
 
 #############################################################################################
 
-# 7) Вложенные циклы не осилил(
+# 7) У вас есть строка my_string = '0123456789'.
+# Сгенерировать целые числа (тип int) от 0 до 99 и поместить их в список.
+# Задание нужно выполнить ТОЛЬКО через цикл в цикле(См. пример выше) и приведение типов .
+# Генерирование через range или другие "фишки" я засчитывать не буду ))
+
+my_list = [1, 2, 3, 4, 5]
+for symbol in range(1,99):
+    my_list.append(symbol)
+print(my_list)
+
+#  Вложенные циклы не осилил(
 
 
 
